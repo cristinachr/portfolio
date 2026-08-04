@@ -212,36 +212,39 @@ a {
 }
 
 /* ==========================================================================
-   5. ESTRUCTURA CV / ABOUT PAGE
+   5. ESTRUCTURA CV / ABOUT PAGE (VERSIÓN AIREADA)
    ========================================================================== */
+
 #about-page .cv-header {
-    margin-bottom: 60px;
+    margin-bottom: 80px; /* <--- Más separación antes del contenido */
 }
 
 #about-page .cv-header h1 {
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 #about-page .cv-intro {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
-    max-width: 800px;
+    max-width: 850px;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 1.8; /* <--- Interlineado más holgado */
 }
 
 /* Grid del CV: Columna Fija + Contenido Principal */
 .cv-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 80px; /* <--- Aumentado para móvil */
 }
 
 @media (min-width: 850px) {
     .cv-grid {
-        grid-template-columns: 280px 1fr; /* Sidebar de 280px, resto a la derecha */
+        /* Sidebar de 300px + 100px de espacio horizontal puro a la derecha */
+        grid-template-columns: 300px 1fr; 
+        gap: 100px; /* <--- Espacio amplio que le da el toque "aireado" */
     }
 }
 
@@ -249,7 +252,7 @@ a {
 .cv-sidebar {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px; /* <--- Más respiro entre el bloque de habilidades y el de softwares */
 }
 
 .skills-block h2 {
@@ -258,8 +261,8 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    padding-bottom: 12px;
+    margin-bottom: 24px; /* <--- Más espacio bajo el título del bloque */
 }
 
 .skills-block ul {
@@ -267,18 +270,19 @@ a {
 }
 
 .skills-block li {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     color: var(--text-secondary);
-    margin-bottom: 8px;
+    margin-bottom: 14px; /* <--- Separación más suave entre cada ítem */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .tech-list li span {
     font-family: var(--font-tech);
     font-size: 0.7rem;
-    background: #eee;
-    padding: 2px 6px;
+    background: #f0f0f0;
+    padding: 3px 8px;
     border-radius: 2px;
     color: #333;
 }
@@ -286,28 +290,29 @@ a {
 /* Sección de Experiencia */
 .section-subtitle {
     font-family: var(--font-tech);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* <--- Aire antes del primer trabajo */
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .experience-item {
-    margin-bottom: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 55px; /* <--- Mucho más espacio entre cada experiencia */
+    padding-bottom: 40px;
     border-bottom: 1px dashed var(--border-color);
 }
 
 .experience-item:last-child {
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 .exp-header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 @media (min-width: 600px) {
@@ -319,8 +324,9 @@ a {
 }
 
 .exp-header h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 600;
+    letter-spacing: -0.3px;
 }
 
 .exp-date {
@@ -333,7 +339,7 @@ a {
     font-size: 0.95rem;
     color: #444;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.7; /* <--- Párrafos más legibles y espaciosos */
 }
 
 /* ==========================================================================
