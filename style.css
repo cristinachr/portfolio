@@ -111,18 +111,38 @@ a {
 }
 
 /* ==========================================================================
-   4. GALERÍA DE PROYECTOS (WORK PAGE)
+   GALERÍA EDITORIAL & TRANSGRESORA (WORK GRID)
    ========================================================================== */
-.projects-grid {
+
+.editorial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr; /* 1 columna en celulares */
+    gap: 60px 40px; /* Mucho aire vertical */
+    align-items: start;
 }
 
-.project-card {
+/* En monitores y computadores se activa la grilla asimétrica */
+@media (min-width: 900px) {
+    .editorial-grid {
+        grid-template-columns: repeat(3, 1fr); /* Grilla de 3 columnas base */
+    }
+
+    /* Ocupar 2 columnas de ancho */
+    .project-card.feat-wide {
+        grid-column: span 2;
+    }
+
+    /* Ocupar 2 columnas en altura para imágenes verticales */
+    .project-card.feat-tall .card-image-wrapper {
+        height: 520px;
+    }
+}
+
+/* Estilo de la Tarjeta */
+.project-card a {
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    group: relative;
 }
 
 .card-image-wrapper {
@@ -130,46 +150,65 @@ a {
     width: 100%;
     height: 380px;
     overflow: hidden;
-    background-color: #f0f0f0;
-    margin-bottom: 15px;
-    border-radius: 2px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
 }
 
 .card-image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+    filter: grayscale(20%); /* Tono editorial levemente desaturado */
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
 }
 
-/* Zoom suave en la imagen al pasar el mouse */
+/* EFECTO TRANSGRESOR AL PASAR EL MOUSE (Hover) */
 .project-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    filter: grayscale(0%); /* Recobra todo el color vívido al pasar el cursor */
 }
 
-.card-category {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 6px 12px;
-    font-family: var(--font-tech);
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 2px;
-}
-
+/* Información del proyecto */
 .card-info h3 {
-    font-size: 1.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
 }
 
 .card-info p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-secondary);
     font-weight: 300;
+}
+
+/* BLOQUE DE FRASE / MANIFIESTO (Interrupción visual) */
+.quote-card {
+    background: #111111;
+    color: #ffffff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+    border-radius: 2px;
+}
+
+.quote-card p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+}
+
+.quote-author {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888888;
 }
 
 /* ==========================================================================
