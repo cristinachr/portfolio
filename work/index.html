@@ -1,123 +1,89 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work — Cristina Chamorro</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body id="work-page">
+<section class="portfolio-grid">
 
-    <!-- NAV PRINCIPAL -->
-    <nav class="main-nav">
-        <a href="../" class="nav-logo"><strong>cristina</strong>chamorro</a>
-        <div class="nav-links">
-            <a href="../">Home</a>
-            <a href="./">Work</a>
-            <a href="../about/">About / CV</a>
-            <a href="mailto:tu-email@gmail.com" class="nav-contact">Contact</a>
-        </div>
-    </nav>
-
-    <main class="contenedor">
-        
-        <!-- ENCABEZADO DE SECCIÓN -->
-        <header class="section-header">
-            <span class="section-label">// SELECTED WORKS & RESEARCH (2024–2026)</span>
-            <h1 class="section-title">Proyectos de diseño industrial, sistemas paramétricos y tecnología adaptativa.</h1>
-        </header>
-
-        <!-- GRILLA EDITORIAL Y ASIMÉTRICA DE PROYECTOS -->
-        <div class="editorial-grid">
-
-            <!-- PROYECTO: PINZAS LIVE ROOTS -->
-            <article class="project-card">
-                <a href="../proyectos/pinzas-live-roots.html">
-                    <div class="card-image-wrapper">
-                        <img src="../img/pinzas/render-tecnico.webp" alt="Desarrollo de Pinzas Inhouse Live Roots">
-                    </div>
-                    <div class="card-info">
-                        <h3>05 / Pinzas de Precisión In-House</h3>
-                        <p>Desarrollo de Producto & Factibilidad de Manufactura — Live Roots</p>
-                    </div>
-                </a>
-            </article>
-            
-            <!-- PROYECTO 1: YUGAKE (Ancho doble / Tarjeta destacada) -->
-            <article class="project-card feat-wide">
-                <a href="../proyectos/yugake.html">
-                    <div class="card-image-wrapper">
-                        <img src="../img/yugake/hero-disparo.webp" alt="Yugake Adaptado para Kyudo">
-                    </div>
-                    <div class="card-info">
-                        <h3>01 / Yugake Adaptado para Kyūdo</h3>
-                        <p>Diseño Inclusivo, Crafting Híbrido & Fabricación Digital — Proyecto de Título (2024)</p>
-                    </div>
-                </a>
-            </article>
-
-            <!-- PROYECTO 2: SISTEMA MOBILIARIO (Vertical / Tall) -->
-            <article class="project-card feat-tall">
-                <a href="../proyectos/mobiliario.html">
-                    <div class="card-image-wrapper">
-                        <img src="../img/hero-paramétrico.webp" alt="Sistema Mobiliario Modular Paramétrico">
-                    </div>
-                    <div class="card-info">
-                        <h3>02 / Sistema Mobiliario Paramétrico</h3>
-                        <p>Optimización CNC & Algoritmos Generativos en Grasshopper</p>
-                    </div>
-                </a>
-            </article>
-
-            <!-- INTERRUPCIÓN VISUAL / MANIFIESTO EDITORIAL -->
-            <aside class="quote-card">
-                <p>"El diseño opera en el punto exacto donde la lógica algorítmica y la fabricación digital potencian la autonomía humana."</p>
-                <span class="quote-author">— Cristina Chamorro</span>
-            </aside>
-
-            <!-- PROYECTO 3: FONDECYT (Estándar) -->
-            <article class="project-card">
-                <a href="../proyectos/fondecyt.html">
-                    <div class="card-image-wrapper">
-                        <img src="../img/hero-paramétrico.webp" alt="Modelos Didácticos Geológicos FONDECYT">
-                    </div>
-                    <div class="card-info">
-                        <h3>03 / Modelos Didácticos Geológicos</h3>
-                        <p>Proyecto FONDECYT / UAH & FabLab UCHILE</p>
-                    </div>
-                </a>
-            </article>
-
-            <!-- PROYECTO 4: GRIFERÍA (Estándar / Ancho doble o simple según grilla) -->
-            <article class="project-card feat-wide">
-                <a href="../proyectos/griferia.html">
-                    <div class="card-image-wrapper">
-                        <img src="../img/hero-paramétrico.webp" alt="Grifería de Alta Precisión">
-                    </div>
-                    <div class="card-info">
-                        <h3>04 / Grifería de Alta Precisión</h3>
-                        <p>Modelado Técnico CAD & Renderizado Fotorrealista</p>
-                    </div>
-                </a>
-            </article>
-
-        </div>
-
-    </main>
-
-    <!-- FOOTER SIMPLE DE NAVEGACIÓN -->
-    <footer class="home-footer">
-        <div class="contenedor footer-content">
-            <div>
-                <h3>¿Interesado en colaborar o consultar un proyecto?</h3>
-                <p>Disponible para proyectos de diseño industrial, modelado paramétrico y prototipado.</p>
+    <!-- 01 / YUGAKE -->
+    <article class="project-card card-large">
+        <a href="proyectos/yugake.html">
+            <div class="card-image-wrapper">
+                <img src="img/yugake/hero.webp" alt="Yugake Adaptado para Kyūdo" loading="lazy">
             </div>
-            <div class="footer-actions">
-                <a href="mailto:tu-email@gmail.com" class="btn-primary">Enviar Email</a>
-                <a href="../about/" class="btn-secondary">Ver CV Completo</a>
+            <div class="card-meta">
+                <span class="card-number">01 / Yugake Adaptado para Kyūdo</span>
+                <p class="card-subtitle">Diseño Inclusivo, Crafting Híbrido & Fabricación Digital — Proyecto de Título (2024)</p>
             </div>
-        </div>
-    </footer>
+        </a>
+    </article>
 
-</body>
-</html>
+    <!-- 02 / GRIFOLA (NUEVO) -->
+    <article class="project-card">
+        <a href="proyectos/grifola.html">
+            <div class="card-image-wrapper">
+                <img src="img/grifola/hero-render.webp" alt="Grifola Grifería Monomando" loading="lazy">
+            </div>
+            <div class="card-meta">
+                <span class="card-number">02 / Grifola — Grifería Monomando</span>
+                <p class="card-subtitle">Diseño de Producto & Modelado CAD — 3° Lugar Concurso Stretto</p>
+            </div>
+        </a>
+    </article>
+
+    <!-- CITA EDITORIAL (Caja Negra) -->
+    <div class="editorial-quote-card">
+        <blockquote>
+            "El diseño opera en el punto exacto donde la lógica algorítmica y la fabricación digital potencian la autonomía humana."
+        </blockquote>
+        <cite>— CRISTINA CHAMORRO</cite>
+    </div>
+
+    <!-- 03 / FONDECYT GEOCIENCIAS -->
+    <article class="project-card">
+        <a href="proyectos/fondecyt-ciencias.html">
+            <div class="card-image-wrapper">
+                <img src="img/fondecyt/hero-globo.webp" alt="Modelo Didáctico Geociencias FONDECYT" loading="lazy">
+            </div>
+            <div class="card-meta">
+                <span class="card-number">03 / Modelo Didáctico Geociencias</span>
+                <p class="card-subtitle">Sistemas Modulares Magnéticos & Impresión 3D — FONDECYT N°1231783</p>
+            </div>
+        </a>
+    </article>
+
+    <!-- 04 / AMIHOGAR (NUEVO) -->
+    <article class="project-card">
+        <a href="proyectos/amihogar.html">
+            <div class="card-image-wrapper">
+                <img src="img/amihogar/hero-amihogar.webp" alt="Dispositivo Asistencial Amihogar" loading="lazy">
+            </div>
+            <div class="card-meta">
+                <span class="card-number">04 / Amihogar — Dispositivo Inteligente</span>
+                <p class="card-subtitle">Ergonomía CAD, CMF & Hardware Asistencial para el Adulto Mayor</p>
+            </div>
+        </a>
+    </article>
+
+    <!-- 05 / ROBOTICA GRASSHOPPER -->
+    <article class="project-card">
+        <a href="proyectos/robotica.html">
+            <div class="card-image-wrapper">
+                <img src="img/robotica/hero-robot.webp" alt="Fabricación Robótica y Algorítmica" loading="lazy">
+            </div>
+            <div class="card-meta">
+                <span class="card-number">05 / Fabricación Robótica & Algorítmica</span>
+                <p class="card-subtitle">Programación Paramétrica en Grasshopper & Brazo Robótico Multi-Eje</p>
+            </div>
+        </a>
+    </article>
+
+    <!-- 06 / LIVE ROOTS PINZAS -->
+    <article class="project-card">
+        <a href="proyectos/pinzas-live-roots.html">
+            <div class="card-image-wrapper">
+                <img src="img/pinzas/hero-pinzas.webp" alt="Pinzas de Precisión Live Roots" loading="lazy">
+            </div>
+            <div class="card-meta">
+                <span class="card-number">06 / Pinzas de Precisión In-House</span>
+                <p class="card-subtitle">Desarrollo de Producto & Factibilidad de Manufactura — Live Roots</p>
+            </div>
+        </a>
+    </article>
+
+</section>
