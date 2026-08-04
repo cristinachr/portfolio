@@ -646,3 +646,175 @@ img {
         font-size: 0.75rem;
     }
 }
+
+/* ==========================================================================
+   8. PÁGINA INDIVIDUAL DE PROYECTO (PROJECT SINGLE)
+   ========================================================================== */
+
+.project-meta-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.project-year {
+    font-family: var(--font-tech);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.project-title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 45px;
+}
+
+/* Ficha de Metadatos (Spec Grid) */
+.project-spec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .project-spec-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en desktop */
+    }
+}
+
+.spec-label {
+    font-family: var(--font-tech);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.spec-item p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Hero Media del Proyecto */
+.project-hero-media {
+    margin-bottom: 70px;
+}
+
+.project-hero-media img {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: cover;
+    background: #f0f0f0;
+    border: 1px solid var(--border-color);
+}
+
+.media-caption {
+    font-family: var(--font-tech);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 12px;
+}
+
+/* Narrativa y Texto del Proyecto */
+.project-narrative {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 90px;
+}
+
+@media (min-width: 768px) {
+    .project-narrative {
+        grid-template-columns: 1fr 1fr; /* Texto en 2 columnas */
+        gap: 60px;
+    }
+}
+
+.narrative-col h2 {
+    font-family: var(--font-tech);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+.narrative-col p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Galería de Fotos / Proceso */
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .project-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item.item-wide {
+        grid-column: span 2; /* Imagen panóramica que abarca 2 columnas */
+    }
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    background: #f0f0f0;
+    border: 1px solid var(--border-color);
+}
+
+.gallery-item figcaption {
+    font-family: var(--font-tech);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 10px;
+}
+
+/* Navegador Inferior entre Proyectos */
+.project-footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 80px;
+}
+
+.nav-back {
+    font-family: var(--font-tech);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-next {
+    text-align: right;
+}
+
+.next-label {
+    font-family: var(--font-tech);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    display: block;
+}
+
+.next-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
