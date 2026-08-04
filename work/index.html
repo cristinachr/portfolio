@@ -1,73 +1,98 @@
-<link rel="stylesheet" href="../style.css">
-<main class="contenedor">
-    <header class="section-header">
-        <span class="section-label">Selected Works — 2024 / 2026</span>
-        <h1 class="section-title">Exploraciones Industriales & Algoritmos</h1>
-    </header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Cristina Chamorro</title>
+    <!-- Vinculación correcta al CSS global en la raíz -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="work-page">
 
-    <section class="editorial-grid">
-
-        <!-- Proyecto 1: Destacado Grande (Ocupa 2 columnas) -->
-        <article class="project-card feat-wide">
-            <a href="../proyectos/silla.html">
-                <div class="card-image-wrapper">
-                    <img src="../hero-paramétrico.webp" alt="Diseño Paramétrico">
-                    <span class="card-category">Mobiliario / Algoritmos</span>
-                </div>
-                <div class="card-info">
-                    <h3>01 / Sistema Mobiliario Modular Paramétrico</h3>
-                    <p>Optimización de corte CNC a través de Grasshopper.</p>
-                </div>
-            </a>
-        </article>
-
-        <!-- Proyecto 2: Vertical / Detalle -->
-        <article class="project-card feat-tall">
-            <a href="../proyectos/experimento.html">
-                <div class="card-image-wrapper">
-                    <img src="../img/render-vertical.webp" alt="Detalle de Impresión 3D">
-                    <span class="card-category">Fabricación Digital</span>
-                </div>
-                <div class="card-info">
-                    <h3>02 / Biopolímeros & Impresión 3D</h3>
-                    <p>Texturas generativas a escala micro.</p>
-                </div>
-            </a>
-        </article>
-
-        <!-- Bloque Transgresor: Interrupción Tipográfica (Sin imagen) -->
-        <div class="quote-card">
-            <p>"El diseño no es la forma del objeto, sino la lógica que gobierna su materia."</p>
-            <span class="quote-author">Cristina Chamorro — Manifesto</span>
+    <!-- NAV / NAVEGACIÓN -->
+    <nav class="main-nav">
+        <a href="../" class="nav-logo"><strong>cristina</strong>chamorro</a>
+        <div class="nav-links">
+            <a href="../">Home</a>
+            <a href="../work/">Work</a>
+            <a href="../about/">About / CV</a>
+            <a href="mailto:tu-email@gmail.com" class="nav-contact">Contact</a>
         </div>
+    </nav>
 
-        <!-- Proyecto 3: Estándar -->
-        <article class="project-card">
-            <a href="../proyectos/griferia.html">
-                <div class="card-image-wrapper">
-                    <img src="../img/griferia.webp" alt="Grifería">
-                    <span class="card-category">Producto / Modelado 3D</span>
-                </div>
-                <div class="card-info">
-                    <h3>03 / Grifería de Alta Precisión</h3>
-                    <p>Desarrollo técnico y modelado fotorrealista.</p>
-                </div>
-            </a>
-        </article>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+        <header class="section-header">
+            <span class="section-label">Selected Works — 2024 / 2026</span>
+            <h1 class="section-title">Exploraciones Industriales & Algoritmos</h1>
+        </header>
 
-        <!-- Proyecto 4: Destacado de Cierre (Ocupa 2 columnas) -->
-        <article class="project-card feat-wide">
-            <a href="../proyectos/fondecyt.html">
-                <div class="card-image-wrapper">
-                    <img src="../img/fondecyt.webp" alt="FONDECYT">
-                    <span class="card-category">FONDECYT / Ciencias de la Tierra</span>
-                </div>
-                <div class="card-info">
-                    <h3>04 / Modelos Didácticos Geológicos</h3>
-                    <p>Traducción de datos geológicos a modelos físicos manufacturables.</p>
-                </div>
-            </a>
-        </article>
+        <section class="editorial-grid">
 
-    </section>
-</main>
+            <!-- Proyecto 1: Destacado Grande (2 columnas) -->
+            <article class="project-card feat-wide">
+                <a href="../proyectos/silla.html">
+                    <div class="card-image-wrapper">
+                        <img src="../hero-paramétrico.webp" alt="Diseño Paramétrico">
+                        <span class="card-category">Mobiliario / Algoritmos</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>01 / Sistema Mobiliario Modular Paramétrico</h3>
+                        <p>Optimización de corte CNC a través de Grasshopper.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Proyecto 2: Vertical -->
+            <article class="project-card feat-tall">
+                <a href="../proyectos/experimento.html">
+                    <div class="card-image-wrapper">
+                        <img src="../hero-paramétrico.webp" alt="Detalle de Impresión 3D">
+                        <span class="card-category">Fabricación Digital</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>02 / Biopolímeros & Impresión 3D</h3>
+                        <p>Texturas generativas a escala micro.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Bloque Transgresor / Cita -->
+            <div class="quote-card">
+                <p>"El diseño no es la forma del objeto, sino la lógica que gobierna su materia."</p>
+                <span class="quote-author">Cristina Chamorro — Manifesto</span>
+            </div>
+
+            <!-- Proyecto 3: Estándar -->
+            <article class="project-card">
+                <a href="../proyectos/griferia.html">
+                    <div class="card-image-wrapper">
+                        <img src="../hero-paramétrico.webp" alt="Grifería">
+                        <span class="card-category">Producto / Modelado 3D</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>03 / Grifería de Alta Precisión</h3>
+                        <p>Desarrollo técnico y modelado fotorrealista.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Proyecto 4: Destacado de Cierre (2 columnas) -->
+            <article class="project-card feat-wide">
+                <a href="../proyectos/fondecyt.html">
+                    <div class="card-image-wrapper">
+                        <img src="../hero-paramétrico.webp" alt="FONDECYT">
+                        <span class="card-category">FONDECYT / Ciencias de la Tierra</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>04 / Modelos Didácticos Geológicos</h3>
+                        <p>Traducción de datos geológicos a modelos físicos manufacturables.</p>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+</html>
