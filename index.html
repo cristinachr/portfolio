@@ -3,28 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Cristina Chamorro | Industrial & Computational Designer</title>
-    
-    <meta name="description" content="Diseñadora Industrial especializada en sistemas computacionales, lógica algorítmica con Grasshopper y fabricación digital en Chile.">
-
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <meta property="og:site_name" content="Cristina Chamorro Portfolio">
-    <meta property="og:title" content="Cristina Chamorro | Industrial & Computational Designer">
-    <meta property="og:url" content="https://cristinachr.github.io/"> <meta property="og:type" content="website">
-    <meta property="og:description" content="Diseño industrial, sistemas paramétricos y desarrollo de productos basados en datos.">
-    <meta property="og:image" content="https://cristinachr.github.io/hero-paramétrico.webp">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-
+    <title>Cristina Chamorro — Industrial & Computational Designer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body id="home-page">
+
+    <!-- NAV PRINCIPAL -->
     <nav class="main-nav">
         <a href="./" class="nav-logo"><strong>cristina</strong>chamorro</a>
         <div class="nav-links">
@@ -35,6 +19,88 @@
         </div>
     </nav>
 
-    
-    </body>
+    <!-- 1. HERO DECLARATIVO -->
+    <header class="home-hero">
+        <div class="contenedor">
+            <span class="hero-tag">Industrial & Computational Designer</span>
+            <h1 class="hero-title">
+                Diseño sistemas objetos, estructuras paramétricas y procesos de fabricación digital.
+            </h1>
+            <p class="hero-subtitle">
+                Basada en Santiago, Chile. Enfocada en la convergencia entre lógica algorítmica (Grasshopper), optimización de manufactura y diseño editorial.
+            </p>
+        </div>
+    </header>
+
+    <!-- 2. DESTACADO PRINCIPAL / HERO IMAGE -->
+    <section class="featured-hero-image">
+        <div class="contenedor">
+            <a href="work/" class="hero-image-card">
+                <div class="hero-img-wrapper">
+                    <img src="hero-paramétrico.webp" alt="Sistema Mobiliario Modular Paramétrico">
+                    <span class="img-badge">Featured Project / 2026</span>
+                </div>
+                <div class="hero-img-caption">
+                    <h2>Sistema Mobiliario Modular Paramétrico</h2>
+                    <p>Optimización de corte CNC a través de algoritmos generativos en Grasshopper ↗</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE PROYECTOS SELECCIONADOS (Vista Rápida) -->
+    <section class="home-selected-works">
+        <div class="contenedor">
+            <div class="section-header-inline">
+                <h2>Selected Projects</h2>
+                <a href="work/" class="link-arrow">Ver todos los proyectos (4) →</a>
+            </div>
+
+            <div class="home-grid">
+                
+                <article class="mini-project-card">
+                    <a href="work/">
+                        <div class="mini-img-wrapper">
+                            <img src="hero-paramétrico.webp" alt="FONDECYT">
+                        </div>
+                        <div class="mini-card-info">
+                            <span class="card-num">01</span>
+                            <h3>Modelos Didácticos Geológicos</h3>
+                            <p>Proyecto FONDECYT / FABLAB UCHILE</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="mini-project-card">
+                    <a href="work/">
+                        <div class="mini-img-wrapper">
+                            <img src="hero-paramétrico.webp" alt="Grifería">
+                        </div>
+                        <div class="mini-card-info">
+                            <span class="card-num">02</span>
+                            <h3>Grifería de Alta Precisión</h3>
+                            <p>Modelado Técnico & Renderizado</p>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FOOTER DIRECTO -->
+    <footer class="home-footer">
+        <div class="contenedor footer-content">
+            <div>
+                <h3>¿Tienes un proyecto o consulta?</h3>
+                <p>Disponible para consultorías de diseño, modelado paramétrico y prototipado.</p>
+            </div>
+            <div class="footer-actions">
+                <a href="mailto:tu-email@gmail.com" class="btn-primary">Enviar Email</a>
+                <a href="about/" class="btn-secondary">Ver CV Completo</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
