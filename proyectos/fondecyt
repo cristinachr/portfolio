@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Didáctico Ciencias de la Tierra (FONDECYT) — Cristina Chamorro</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="project-single-page">
+
+    <!-- NAV PRINCIPAL -->
+    <nav class="main-nav">
+        <a href="../" class="nav-logo"><strong>cristina</strong>chamorro</a>
+        <div class="nav-links">
+            <a href="../">Home</a>
+            <a href="../work/">Work</a>
+            <a href="../about/">About / CV</a>
+            <a href="mailto:cristinachamorro21@gmail.com" class="nav-contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="contenedor">
+        
+        <!-- HEADER -->
+        <header class="project-header">
+            <div class="project-meta-top">
+                <span class="section-label">06 / Educational Design & Applied Research</span>
+                <span class="project-year">2023</span>
+            </div>
+            
+            <h1 class="project-title">Modelo Didáctico Interactiva para la Enseñanza de Ciencias de la Tierra</h1>
+            
+            <div class="project-spec-grid">
+                <div class="spec-item">
+                    <span class="spec-label">Marco</span>
+                    <p>FONDECYT N°1231783 (Práctica Profesional)</p>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Área</span>
+                    <p>Geociencias, Pedagogía & Diseño Industrial</p>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Tu Rol</span>
+                    <p>Representación 3D, Modelado CAD & Prototipado</p>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Herramientas</span>
+                    <p>Rhinoceros, Fusion 360, Impresión 3D FDM</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO MEDIA -->
+        <div class="project-hero-media">
+            <img src="../img/fondecyt/hero-globo-render.webp" alt="Render 3D del modelo esférico en sección con capas de la Tierra">
+            <figcaption class="media-caption">Render técnico en sección: corte esférico mostrando el manto y capas internas acoplables.</figcaption>
+        </div>
+
+        <!-- NARRATIVA EDITORIAL -->
+        <section class="project-narrative">
+            <div class="narrative-col text-main">
+                <h2>El Brief & Marco de Investigación</h2>
+                <p>
+                    Proyecto desarrollado en el marco del <strong>Fondecyt N°1231783</strong>: <em>"Conocimiento Pedagógico del Contenido en profesores que enseñan Ciencias de la Tierra"</em>. El objetivo fue diseñar herramientas tangibles e interactivas para facilitar la comprensión de fenómenos geológicos complejos en el aula: la tectónica de placas y la estructura interna del planeta.
+                </p>
+            </div>
+            <div class="narrative-col text-secondary">
+                <h2>Desarrollo CAD & Sistema Tangible</h2>
+                <p>
+                    Lideré la traducción 3D y prototipado del sistema de dos modelos integrados: <strong>14 placas tectónicas encajables</strong> sobre una esfera de 150 mm y <strong>8 secciones internas</strong> (núcleo interno, externo y manto) vinculadas mediante imanes de neodimio, permitiendo desensamblar el planeta y explorar su interior de forma táctil.
+                </p>
+            </div>
+        </section>
+
+        <!-- GALERÍA TÉCNICA -->
+        <section class="project-gallery">
+            
+            <figure class="gallery-item item-wide">
+                <img src="../img/fondecyt/despiece-componentes.webp" alt="Fotografía de taller con todas las piezas 3D impresas despiezadas">
+                <figcaption>Registro de taller: despiece sistemático de las 14 placas tectónicas, núcleos y moldes de ensamble previo a la colocación de imanes.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="../img/fondecyt/ensamble-mano.webp" alt="Prueba de agarre e imanes con la esfera articulada">
+                <figcaption>Verificación ergonómica y de fuerza magnética en prototipo físico completo.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="../img/fondecyt/corte-modelo-fisico.webp" alt="Vista en detalle de la esfera abierta y capas de colores">
+                <figcaption>Modelo prototipado final: diferenciación CMF por capas térmicas mediante polímeros de color y acople por magnetismo.</figcaption>
+            </figure>
+
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+        <footer class="project-footer-nav">
+            <a href="../work/" class="nav-back">← Volver a Work</a>
+            <a href="yugake.html" class="nav-next">
+                <span class="next-label">Siguiente Proyecto →</span>
+                <span class="next-title">Yugake Adaptado para Kyūdo</span>
+            </a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
