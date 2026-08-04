@@ -212,47 +212,47 @@ a {
 }
 
 /* ==========================================================================
-   5. ESTRUCTURA CV / ABOUT PAGE (VERSIÓN AIREADA)
+   5. ESTRUCTURA CV / ABOUT PAGE (VERSIÓN EDITORIAL AIREADA)
    ========================================================================== */
 
 #about-page .cv-header {
-    margin-bottom: 80px; /* <--- Más separación antes del contenido */
+    margin-bottom: 70px; /* Separación amplia tras el título */
 }
 
 #about-page .cv-header h1 {
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 300;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
 #about-page .cv-intro {
     font-size: 1.15rem;
     color: var(--text-secondary);
-    max-width: 850px;
+    max-width: 880px;
     font-weight: 300;
-    line-height: 1.8; /* <--- Interlineado más holgado */
+    line-height: 1.8; /* Interlineado suelto y muy legible */
 }
 
 /* Grid del CV: Columna Fija + Contenido Principal */
 .cv-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 80px; /* <--- Aumentado para móvil */
+    gap: 70px;
 }
 
 @media (min-width: 850px) {
     .cv-grid {
-        /* Sidebar de 300px + 100px de espacio horizontal puro a la derecha */
-        grid-template-columns: 300px 1fr; 
-        gap: 100px; /* <--- Espacio amplio que le da el toque "aireado" */
+        grid-template-columns: 280px 1fr; 
+        gap: 90px; /* Espacio horizontal generoso entre sidebar y experiencia */
     }
 }
 
-/* Sidebar de Habilidades */
+/* Sidebar de Habilidades y Softwares */
 .cv-sidebar {
     display: flex;
     flex-direction: column;
-    gap: 60px; /* <--- Más respiro entre el bloque de habilidades y el de softwares */
+    gap: 55px; /* Respiro vertical entre Habilidades y Softwares */
 }
 
 .skills-block h2 {
@@ -262,7 +262,7 @@ a {
     letter-spacing: 2px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 12px;
-    margin-bottom: 24px; /* <--- Más espacio bajo el título del bloque */
+    margin-bottom: 24px;
 }
 
 .skills-block ul {
@@ -272,7 +272,7 @@ a {
 .skills-block li {
     font-size: 0.92rem;
     color: var(--text-secondary);
-    margin-bottom: 14px; /* <--- Separación más suave entre cada ítem */
+    margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,37 +282,42 @@ a {
     font-family: var(--font-tech);
     font-size: 0.7rem;
     background: #f0f0f0;
-    padding: 3px 8px;
+    padding: 2px 8px;
     border-radius: 2px;
     color: #333;
 }
 
-/* Sección de Experiencia */
+/* Subtítulos principales (EXPERIENCIA / EDUCACIÓN) */
 .section-subtitle {
     font-family: var(--font-tech);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 40px; /* <--- Aire antes del primer trabajo */
+    margin-bottom: 40px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 12px;
 }
 
+.edu-subtitle {
+    margin-top: 70px; /* Separación grande entre Experiencia y Educación */
+}
+
+/* Items de Experiencia Laboral */
 .experience-item {
-    margin-bottom: 55px; /* <--- Mucho más espacio entre cada experiencia */
-    padding-bottom: 40px;
+    margin-bottom: 50px; /* Mucho aire entre cada trabajo */
+    padding-bottom: 35px;
     border-bottom: 1px dashed var(--border-color);
 }
 
-.experience-item:last-child {
+.experience-item:last-of-type {
     border-bottom: none;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .exp-header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 @media (min-width: 600px) {
@@ -339,9 +344,66 @@ a {
     font-size: 0.95rem;
     color: #444;
     font-weight: 300;
-    line-height: 1.7; /* <--- Párrafos más legibles y espaciosos */
+    line-height: 1.7;
 }
 
+/* Items de Educación */
+.education-item {
+    margin-bottom: 32px;
+}
+
+.education-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.edu-institution {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.edu-institution span {
+    font-family: var(--font-tech);
+    font-size: 0.8rem;
+}
+
+/* Botones de Acción al Final */
+.cv-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 70px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-cv {
+    font-family: var(--font-tech);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 14px 28px;
+    border: 1px solid #111;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    background: #333;
+}
+
+.btn-cv.btn-outline {
+    background: transparent;
+    color: #111;
+}
+
+.btn-cv.btn-outline:hover {
+    background: #111;
+    color: #fff;
+}
 /* ==========================================================================
    6. RESPONSIVE / AJUSTES PARA MÓVIL
    ========================================================================== */
