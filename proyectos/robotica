@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricación Robótica & Algorítmica — Cristina Chamorro</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="project-single-page">
+
+    <!-- NAV PRINCIPAL -->
+    <nav class="main-nav">
+        <a href="../" class="nav-logo"><strong>cristina</strong>chamorro</a>
+        <div class="nav-links">
+            <a href="../">Home</a>
+            <a href="../work/">Work</a>
+            <a href="../about/">About / CV</a>
+            <a href="mailto:tu-email@gmail.com" class="nav-contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="contenedor">
+        
+        <!-- HEADER -->
+        <header class="project-header">
+            <div class="project-meta-top">
+                <span class="section-label">03 / Computational Design & Robotics</span>
+                <span class="project-year">2025</span>
+            </div>
+            
+            <h1 class="project-title">Fabricación Algorítmica con Brazo Robótico Multi-Eje</h1>
+            
+            <div class="project-spec-grid">
+                <div class="spec-item">
+                    <span class="spec-label">Contexto</span>
+                    <p>Diplomado / Proyecto Colaborativo</p>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Rol</span>
+                    <p>Programación Paramétrica & Cinemática Robótica</p>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Software</span>
+                    <p>Grasshopper, KUKA|prc / ABB, Rhinoceros 3D</p>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Hardware</span>
+                    <p>Brazo Robótico Industrial de 6 Ejes</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO MEDIA -->
+        <div class="project-hero-media">
+            <img src="../img/robotica/hero-robot.webp" alt="Procesamiento con brazo robótico">
+            <figcaption class="media-caption">Ejecución del algoritmo de fabricación mediante brazo robótico de 6 ejes en taller.</figcaption>
+        </div>
+
+        <!-- NARRATIVA -->
+        <section class="project-narrative">
+            <div class="narrative-col text-main">
+                <h2>Lógica Algorítmica & Vectorial</h2>
+                <p>
+                    Investigación enfocada en la traducción de lógica matemática en código cinemático directo. Mediante Grasshopper, se diseñaron trayectorias complejas para guiar el efector final del brazo robótico, controlando en tiempo real variables como velocidad, aceleración y ángulo de ataque.
+                </p>
+            </div>
+            <div class="narrative-col text-secondary">
+                <h2>Cinemática de Materiales</h2>
+                <p>
+                    A diferencia de la fabricación 3D o CNC tradicional de 3 ejes, el uso de robótica multi-eje permite abordar la materia desde ángulos no ortogonales. La exploración evaluó las tolerancias del material ante trayectorias continuas generadas por algoritmos.
+                </p>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="project-gallery">
+            
+            <figure class="gallery-item item-wide">
+                <img src="../img/robotica/script-grasshopper.webp" alt="Definición de Grasshopper y simulación de robot">
+                <figcaption>Definición algorítmica en Grasshopper y simulación vectorial de trayectorias (toolpaths).</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="../img/robotica/detalle-material.webp" alt="Detalle de textura o material elaborado">
+                <figcaption>Respuesta física de la superficie procesada por el efector robótico.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="../img/robotica/equipo-taller.webp" alt="Trabajo en laboratorio de robótica">
+                <figcaption>Configuración y calibración del entorno de trabajo en laboratorio.</figcaption>
+            </figure>
+
+        </section>
+
+        <!-- NAVEGACIÓN -->
+        <footer class="project-footer-nav">
+            <a href="../work/" class="nav-back">← Volver a Work</a>
+            <a href="yugake.html" class="nav-next">
+                <span class="next-label">Siguiente Proyecto →</span>
+                <span class="next-title">Yugake Adaptado para Kyūdo</span>
+            </a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
