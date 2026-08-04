@@ -3,122 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristina Chamorro — Industrial & Computational Designer</title>
+    <title>Cristina Chamorro — Industrial Design & Computational Craft</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="home-page">
 
-    <!-- NAV PRINCIPAL -->
+    <!-- BARRA DE NAVEGACIÓN -->
     <nav class="main-nav">
         <a href="./" class="nav-logo"><strong>cristina</strong>chamorro</a>
         <div class="nav-links">
             <a href="./">Home</a>
             <a href="work/">Work</a>
             <a href="about/">About / CV</a>
-            <a href="mailto:tu-email@gmail.com" class="nav-contact">Contact</a>
+            <a href="mailto:cristinachamorro21@gmail.com" class="nav-contact">Contact</a>
         </div>
     </nav>
 
-    <!-- 1. HERO DECLARATIVO -->
-    <header class="home-hero">
-        <div class="contenedor">
-            <span class="hero-tag">// INDUSTRIAL & COMPUTATIONAL DESIGN</span>
-            <h1 class="hero-title">
-                Diseño sistemas, objetos, estructuras paramétricas y procesos de fabricación digital.
-            </h1>
-            <p class="hero-subtitle">
-                Basada en Santiago, Chile. Enfocada en la convergencia entre lógica algorítmica (Grasshopper), optimización de manufactura y diseño editorial.
-            </p>
-        </div>
-    </header>
+    <main class="contenedor">
+        
+        <!-- HERO DE PORTADA -->
+        <section class="home-hero">
+            <span class="hero-tag">Industrial Designer & Hardware Developer</span>
+            <h1 class="hero-title">Diseño de producto en la intersección del modelado CAD avanzado, la tecnología asistencial y la fabricación algorítmica.</h1>
+            <p class="hero-subtitle">Especializada en el desarrollo de hardware técnico, geometría compleja en Rhinoceros/Grasshopper y optimización para manufactura (DFM).</p>
+        </section>
 
-    <!-- 2. GRID SHOWCASE (MUESTRARIO ASIMÉTRICO: PRODUCTO + CÓDIGO/PROCESO) -->
-    <section class="home-showcase">
-        <div class="contenedor">
-            <div class="showcase-grid">
-                
-                <!-- Imagen Principal Izquierda (Grande) -->
-                <a href="work/" class="showcase-item item-main">
-                    <img src="hero-paramétrico.webp" alt="Sistema Mobiliario Modular Paramétrico">
-                    <div class="item-overlay">
-                        <span class="item-cat">Featured Project / 2026</span>
-                        <h3>Sistema Mobiliario Modular Paramétrico ↗</h3>
+        <!-- GRILLA PRINCIPAL DE PROYECTOS (SECUENCIA ESTRATÉGICA) -->
+        <section class="portfolio-grid">
+
+            <!-- 01 / YUGAKE (PROYECTO INSIGNIA - DESTACADO ANCHO) -->
+            <article class="project-card card-large">
+                <a href="proyectos/yugake.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/yugake/hero.webp" alt="Yugake Adaptado para Kyūdo" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">01 / Yugake Adaptado para Kyūdo</span>
+                        <p class="card-subtitle">Diseño Inclusivo, Crafting Híbrido & Fabricación Digital — Proyecto de Título (2024)</p>
                     </div>
                 </a>
+            </article>
 
-                <!-- Imagen Superior Derecha (Detalle / Código / Malla) -->
-                <a href="work/" class="showcase-item item-detail-1">
-                    <img src="hero-paramétrico.webp" alt="Lógica Algorítmica Grasshopper">
-                    <div class="item-overlay">
-                        <span class="item-cat">Process / Grasshopper Script</span>
+            <!-- 02 / GRIFOLA (RECONOCIMIENTO EN INDUSTRIA) -->
+            <article class="project-card">
+                <a href="proyectos/grifola.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/grifola/hero-render.webp" alt="Grifola Grifería Monomando" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">02 / Grifola — Grifería Monomando</span>
+                        <p class="card-subtitle">Diseño de Producto & Modelado CAD — 3° Lugar Concurso Stretto (2022)</p>
                     </div>
                 </a>
+            </article>
 
-                <!-- Imagen Inferior Derecha (Materialidad / Prototipo) -->
-                <a href="work/" class="showcase-item item-detail-2">
-                    <img src="hero-paramétrico.webp" alt="Prototipado Digital">
-                    <div class="item-overlay">
-                        <span class="item-cat">Manufacture / CNC & 3D Print</span>
+            <!-- CITA EDITORIAL (BLOQUE MANIFIESTO EN CAJA NEGRA) -->
+            <div class="editorial-quote-card">
+                <blockquote>
+                    "El diseño opera en el punto exacto donde la lógica algorítmica y la fabricación digital potencian la autonomía humana."
+                </blockquote>
+                <cite>— CRISTINA CHAMORRO</cite>
+            </div>
+
+            <!-- 03 / FONDECYT GEOCIENCIAS (INVESTIGACIÓN Y RIGOR TÉCNICO) -->
+            <article class="project-card">
+                <a href="proyectos/fondecyt-ciencias.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/fondecyt/hero-globo.webp" alt="Modelo Didáctico Geociencias FONDECYT" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">03 / Modelo Didáctico Geociencias</span>
+                        <p class="card-subtitle">Sistemas Modulares Magnéticos & Impresión 3D — FONDECYT N°1231783 (2023)</p>
                     </div>
                 </a>
+            </article>
 
+            <!-- 04 / AMIHOGAR (HARDWARE ASISTENCIAL & ERGONOMÍA) -->
+            <article class="project-card">
+                <a href="proyectos/amihogar.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/amihogar/hero-amihogar.webp" alt="Dispositivo Asistencial Amihogar" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">04 / Amihogar — Dispositivo Inteligente</span>
+                        <p class="card-subtitle">Ergonomía CAD, CMF & Hardware Asistencial para el Adulto Mayor (2023)</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- 05 / FABRICACIÓN ROBÓTICA (VANGUARDIA COMPUTACIONAL) -->
+            <article class="project-card">
+                <a href="proyectos/robotica.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/robotica/hero-robot.webp" alt="Fabricación Robótica y Algorítmica" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">05 / Fabricación Robótica & Algorítmica</span>
+                        <p class="card-subtitle">Programación Paramétrica en Grasshopper & Brazo Robótico Multi-Eje (2024)</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- 06 / EKSTREM PARAMÉTRICO (DISEÑO COMPUTACIONAL & MOBILIARIO) -->
+            <article class="project-card">
+                <a href="proyectos/ekstrem.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/ekstrem/hero-render.webp" alt="Ekstrem Sistema de Asientos Paramétricos" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">06 / Ekstrem — Mobiliario Paramétrico</span>
+                        <p class="card-subtitle">Diseño Computacional, Grasshopper & Modelado Algorítmico (2023)</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- 07 / PINZAS LIVE ROOTS (DFM & FACTIBILIDAD REAL DE MANUFACTURA - DESTACADO ANCHO) -->
+            <article class="project-card card-large">
+                <a href="proyectos/pinzas-live-roots.html">
+                    <div class="card-image-wrapper">
+                        <img src="img/pinzas/hero-pinzas.webp" alt="Pinzas de Precisión Live Roots" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <span class="card-number">07 / Pinzas de Precisión In-House</span>
+                        <p class="card-subtitle">Desarrollo de Producto, DFM & Factibilidad de Manufactura — Live Roots (2024)</p>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+
+        <!-- FOOTER DE PORTADA -->
+        <footer class="home-footer">
+            <div class="footer-content">
+                <div>
+                    <span class="section-label">¿Buscas colaborar o revisar mi trayectoria?</span>
+                    <h2 class="section-title">Construyamos proyectos con rigor técnico y propósito.</h2>
+                </div>
+                <div class="footer-actions">
+                    <a href="about/" class="btn-primary">Ver CV & Perfil</a>
+                    <a href="mailto:cristinachamorro21@gmail.com" class="btn-secondary">Enviar Correo</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- 3. SECCIÓN DE PROYECTOS SELECCIONADOS (VISTA RÁPIDA) -->
-    <section class="home-selected-works">
-        <div class="contenedor">
-            <div class="section-header-inline">
-                <h2>Selected Works</h2>
-                <a href="work/" class="link-arrow">Explorar todos los proyectos (4) →</a>
-            </div>
-
-            <div class="home-grid">
-                
-                <article class="mini-project-card">
-                    <a href="work/">
-                        <div class="mini-img-wrapper">
-                            <img src="hero-paramétrico.webp" alt="FONDECYT">
-                        </div>
-                        <div class="mini-card-info">
-                            <span class="card-num">01</span>
-                            <h3>Modelos Didácticos Geológicos</h3>
-                            <p>Proyecto FONDECYT / UAH & FABLAB UCHILE</p>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="mini-project-card">
-                    <a href="work/">
-                        <div class="mini-img-wrapper">
-                            <img src="hero-paramétrico.webp" alt="Grifería">
-                        </div>
-                        <div class="mini-card-info">
-                            <span class="card-num">02</span>
-                            <h3>Grifería de Alta Precisión</h3>
-                            <p>Modelado Técnico & Renderizado Fotorrealista</p>
-                        </div>
-                    </a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. FOOTER DIRECTO -->
-    <footer class="home-footer">
-        <div class="contenedor footer-content">
-            <div>
-                <h3>¿Tienes un proyecto o consulta?</h3>
-                <p>Disponible para consultorías de diseño, modelado paramétrico y prototipado.</p>
-            </div>
-            <div class="footer-actions">
-                <a href="mailto:tu-email@gmail.com" class="btn-primary">Enviar Email</a>
-                <a href="about/" class="btn-secondary">Ver CV Completo</a>
-            </div>
-        </div>
-    </footer>
+    </main>
 
 </body>
 </html>
