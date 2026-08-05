@@ -3,105 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amihogar — Dispositivo de Asistencia — Cristina Chamorro</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>AMIHOGAR — Cristina Chamorro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS GENERALES (RESET) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #111111;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- BOTÓN NAVEGACIÓN --- */
+        .back-link {
+            display: inline-block;
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: #666;
+            margin-bottom: 3rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: #000;
+        }
+
+        /* --- ENCABEZADO Y METADATA --- */
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .meta-item span {
+            display: block;
+            color: #888;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: #eee;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        /* --- CONTENIDO PRINCIPAL (LAYOUT DE 2 COLUMNAS) --- */
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (min-width: 850px) {
+            .project-content {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #888;
+            margin-bottom: 1rem;
+            position: sticky;
+            top: 2rem;
+        }
+
+        .text-block {
+            margin-bottom: 3rem;
+        }
+
+        .text-block h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .text-block p {
+            color: #333;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .highlights-list {
+            list-style: none;
+        }
+
+        .highlights-list li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 300;
+        }
+
+        .highlights-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #888;
+        }
+
+        .highlights-list strong {
+            font-weight: 500;
+            color: #000;
+        }
+
+        /* --- GALERÍA VISUAL --- */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            width: 100%;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+        }
+
+        .gallery-item figcaption {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 0.6rem;
+            font-weight: 300;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            border-top: 1px solid #e5e5e5;
+            padding-top: 2rem;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
 </head>
-<body id="project-single-page">
+<body>
 
-    <!-- NAV PRINCIPAL -->
-    <nav class="main-nav">
-        <a href="../" class="nav-logo"><strong>cristina</strong>chamorro</a>
-        <div class="nav-links">
-            <a href="../">Home</a>
-            <a href="../work/">Work</a>
-            <a href="../about/">About / CV</a>
-            <a href="mailto:cristinachamorro21@gmail.com" class="nav-contact">Contact</a>
-        </div>
-    </nav>
+    <a href="index.html" class="back-link">← Volver a Work</a>
 
-    <main class="contenedor">
+    <header>
+        <h1>AMIHOGAR</h1>
+        <p class="subtitle">Dispositivo inteligente para la autonomía de personas mayores dentro del hogar</p>
         
-        <!-- HEADER -->
-        <header class="project-header">
-            <div class="project-meta-top">
-                <span class="section-label">05 / Assistive Design & CAD Modeling</span>
-                <span class="project-year">2021 — 2022</span>
-            </div>
-            
-            <h1 class="project-title">Amihogar — Dispositivo Inteligente de Asistencia Doméstica</h1>
-            
-            <div class="project-spec-grid">
-                <div class="spec-item">
-                    <span class="spec-label">Categoría</span>
-                    <p>Hardware Asistencial / Smart Home</p>
-                </div>
-                <div class="spec-item">
-                    <span class="spec-label">Equipo</span>
-                    <p>Proyecto Colaborativo</p>
-                </div>
-                <div class="spec-item">
-                    <span class="spec-label">Tu Rol</span>
-                    <p>Desarrollo 3D, Ergonomía CAD & Renders</p>
-                </div>
-                <div class="spec-item">
-                    <span class="spec-label">Software</span>
-                    <p>Fusion 360, Rhinoceros, V-Ray</p>
+        <div class="project-meta">
+            <div class="meta-item">
+                <span>Categoría</span>
+                <div class="tags">
+                    <span class="tag">Smart Hardware</span>
+                    <span class="tag">IoT</span>
+                    <span class="tag">Ergonomía</span>
                 </div>
             </div>
-        </header>
-
-        <!-- HERO MEDIA -->
-        <div class="project-hero-media">
-            <img src="../img/amihogar/hero-amihogar.webp" alt="Render de estudio de Amihogar en su pedestal">
-            <figcaption class="media-caption">Control remoto inteligente y base de carga diseñados para la autonomía del adulto mayor.</figcaption>
+            <div class="meta-item">
+                <span>Contexto</span>
+                <p>Proyecto VI / FAU U. de Chile</p>
+            </div>
+            <div class="meta-item">
+                <span>Año</span>
+                <p>2021 — 2022</p>
+            </div>
+            <div class="meta-item">
+                <span>Equipo</span>
+                <p>C. Chamorro, E. Morales, A. Ramírez</p>
+            </div>
         </div>
+    </header>
 
-        <!-- NARRATIVA EDITORIAL -->
-        <section class="project-narrative">
-            <div class="narrative-col text-main">
-                <h2>El Desafío Asistencial</h2>
-                <p>
-                    <strong>Amihogar</strong> es un interfaz física e inteligente proyectada para fortalecer la autonomía de personas mayores con distintos grados de dependencia dentro del hogar. Funciona unificando el control de dispositivos frecuentes (iluminación, cortinas, audio, TV) e integrando un botón SOS para emergencias conectado con tutores vía Wi-Fi.
-                </p>
-            </div>
-            <div class="narrative-col text-secondary">
-                <h2>Desarrollo 3D & Ergonomía CAD</h2>
-                <p>
-                    Lideré el modelado tridimensional del producto. La geometría requirió resolver una forma cónica con cintura para un agarre intuitivo[cite: 1], articulando una carcasa plástica rígida con una sobre-inyección de silicona texturizada para prevenir caídas[cite: 1]. Adicionalmente, modelé el pedestal de recarga y generé el desglose de vistas técnicas y renders de estudio[cite: 1].
-                </p>
-            </div>
-        </section>
+    <main class="project-content">
+        
+        <aside>
+            <div class="section-title">01 / Overview</div>
+        </aside>
 
-        <!-- GALERÍA TÉCNICA -->
-        <section class="project-gallery">
-            
-            <figure class="gallery-item item-wide">
-                <img src="../img/amihogar/plano-tecnico.webp" alt="Plano técnico con cotas de Amihogar">
-                <figcaption>Vista técnica de componentes, cotas ergonómicas de la empuñadura y geometría del pedestal.</figcaption>
-            </figure>
-
-            <figure class="gallery-item">
-                <img src="../img/amihogar/detalle-uso.webp" alt="Prueba de interacción y contraste de botones">
-                <figcaption>Diseño de interfaz táctil: botones sobreelevados de alto contraste y respuesta háptica.</figcaption>
-            </figure>
-
-            <figure class="gallery-item">
-                <img src="../img/amihogar/estudio-pedestal.webp" alt="Render del pedestal y cuerpo">
-                <figcaption>Estudio CMF (Color, Material & Finish) combinando silicona texturizada y polímeros de alto impacto.</figcaption>
-            </figure>
-
-        </section>
-
-        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
-        <footer class="project-footer-nav">
-            <a href="../work/" class="nav-back">← Volver a Work</a>
-            <a href="grifola.html" class="nav-next">
-                <span class="next-label">Siguiente Proyecto →</span>
-                <span class="next-title">Grifola — Monomando Stretto</span>
-            </a>
-        </footer>
-
-    </main>
-
-</body>
-</html>
+        <section
