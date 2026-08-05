@@ -9,191 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <style>
-        /* --- ESTILOS GENERALES (RESET) --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fafafa;
-            color: #111111;
-            line-height: 1.6;
-            padding: 2rem 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* --- BOTÓN NAVEGACIÓN --- */
-        .back-link {
-            display: inline-block;
-            font-size: 0.85rem;
-            text-decoration: none;
-            color: #666;
-            margin-bottom: 3rem;
-            transition: color 0.2s ease;
-        }
-
-        .back-link:hover {
-            color: #000;
-        }
-
-        /* --- ENCABEZADO Y METADATA --- */
-        header {
-            border-bottom: 1px solid #e5e5e5;
-            padding-bottom: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        h1 {
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            font-weight: 500;
-            letter-spacing: -0.03em;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #555;
-            font-weight: 300;
-            margin-bottom: 2rem;
-        }
-
-        .project-meta {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.5rem;
-            font-size: 0.85rem;
-        }
-
-        .meta-item span {
-            display: block;
-            color: #888;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.25rem;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tag {
-            background-color: #eee;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-
-        /* --- CONTENIDO PRINCIPAL (LAYOUT DE 2 COLUMNAS) --- */
-        .project-content {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 4rem;
-            margin-bottom: 4rem;
-        }
-
-        @media (min-width: 850px) {
-            .project-content {
-                grid-template-columns: 1fr 2fr;
-            }
-        }
-
-        .section-title {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #888;
-            margin-bottom: 1rem;
-            position: sticky;
-            top: 2rem;
-        }
-
-        .text-block {
-            margin-bottom: 3rem;
-        }
-
-        .text-block h3 {
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin-bottom: 1rem;
-            letter-spacing: -0.01em;
-        }
-
-        .text-block p {
-            color: #333;
-            font-weight: 300;
-            margin-bottom: 1rem;
-        }
-
-        .highlights-list {
-            list-style: none;
-        }
-
-        .highlights-list li {
-            position: relative;
-            padding-left: 1.2rem;
-            margin-bottom: 1rem;
-            color: #333;
-            font-weight: 300;
-        }
-
-        .highlights-list li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: #888;
-        }
-
-        .highlights-list strong {
-            font-weight: 500;
-            color: #000;
-        }
-
-        /* --- GALERÍA VISUAL --- */
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-            margin-top: 2rem;
-        }
-
-        .gallery-item {
-            width: 100%;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 4px;
-            background-color: #f0f0f0;
-        }
-
-        .gallery-item figcaption {
-            font-size: 0.8rem;
-            color: #777;
-            margin-top: 0.6rem;
-            font-weight: 300;
-        }
-
-        /* --- FOOTER --- */
-        footer {
-            border-top: 1px solid #e5e5e5;
-            padding-top: 2rem;
-            margin-top: 5rem;
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.85rem;
-            color: #777;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -227,10 +43,68 @@
         </div>
     </header>
 
-    <main class="project-content">
+    <main class="project-layout">
         
         <aside>
             <div class="section-title">01 / Overview</div>
         </aside>
 
-        <section
+        <div class="main-content">
+            
+            <div class="text-block">
+                <h3>El Desafío</h3>
+                <p>Tras observaciones etnográficas y visitas a terreno con adultos mayores de entre 70 y 85 años con distintos grados de dependencia, se identificaron 5 puntos críticos en el hogar: iluminación, manejo de cortinas, acceso a entretenimiento (TV/radio) y comunicación inmediata ante emergencias.</p>
+                <p>La mayor vulnerabilidad ocurre cuando el adulto mayor intenta ejercer su autonomía mientras su cuidador se encuentra fuera del hogar o en reposo.</p>
+            </div>
+
+            <div class="text-block">
+                <h3>La Solución</h3>
+                <p>AMIHOGAR es un dispositivo de asistencia inteligente con arquitectura de comunicación híbrida:</p>
+                <ul class="highlights-list">
+                    <li><strong>Radiofrecuencia (433 MHz):</strong> Control directo e inalámbrico de soquetes universales (iluminación) y actuadores de cortinas dentro del hogar sin requerir internet.</li>
+                    <li><strong>Conexión Wi-Fi:</strong> Vincula el módulo de SOS/Emergencia con la aplicación móvil del cuidador para enviar alertas sonoras y con vibración en tiempo real.</li>
+                </ul>
+            </div>
+
+            <div class="text-block">
+                <h3>Factores Clave de Ingeniería & DFM</h3>
+                <ul class="highlights-list">
+                    <li><strong>Ergonomía Adaptativa:</strong> Morfología cónica con cintura de agarre ajustada a la anatomía de la mano y botones de silicona de gran formato (1.5 × 1.5 cm) con relieve táctil diferenciado.</li>
+                    <li><strong>Módulo SOS Desprendible:</strong> Comando de emergencia portátil (2.5 × 2.5 cm) deslizable e independiente para llevar consigo en todo momento.</li>
+                    <li><strong>Arquitectura Interna & DFM:</strong> Carcasa de dos tapas inyectadas diseñada para optimizar el empaquetado de la PCB (circuito impreso), batería, transmisor RF y chip Wi-Fi.</li>
+                </ul>
+            </div>
+
+            <section class="gallery">
+                <figure class="gallery-item">
+                    <img src="assets/amihogar-hero.jpg" alt="Render Principal Amihogar">
+                    <figcaption>Render principal: Morfología cónica y disposición de comandos táctiles.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="assets/amihogar-ergonomia.jpg" alt="Estudio Ergonómico y Dimensiones">
+                    <figcaption>Análisis de agarre anatómico y cotas generales (15.4 × 4.5 cm).</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="assets/amihogar-arquitectura.jpg" alt="Diagrama de Sistema RF y WiFi">
+                    <figcaption>Esquema de comunicación híbrida: Radiofrecuencia 433MHz + Wi-Fi.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="assets/amihogar-despiece.jpg" alt="Vistas Técnicas y Despiece de Carcasa">
+                    <figcaption>Despiece explosivo: Tapas inyectadas, botones de silicona y empaquetado de la PCB.</figcaption>
+                </figure>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Cristina Chamorro — Industrial Design Portfolio</p>
+        <p><a href="index.html" class="back-link" style="margin-bottom:0;">Siguiente Proyecto →</a></p>
+    </footer>
+
+</body>
+</html>
