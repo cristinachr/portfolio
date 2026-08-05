@@ -700,6 +700,151 @@ img {
     font-weight: 600;
 }
 
+
+/* ==========================================
+   ARCHIVE SECTION - VISUAL STREAM (TUMBLR VIBE)
+   ========================================== */
+
+/* Contenedor principal */
+.archive-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 24px 60px 24px; /* Ajusta según tu header/nav */
+}
+
+/* Header & Bajada */
+.archive-header {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.archive-title {
+  font-family: 'Space Grotesk', sans-serif; /* Tu fuente de títulos */
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.archive-title span {
+  font-size: 1rem;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.archive-description {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666; /* Gris neutro para no saturar */
+}
+
+/* Grid Masonry con CSS Columns (Orgánico tipo Tumblr) */
+.archive-grid {
+  column-count: 3; /* 3 columnas en pantallas grandes */
+  column-gap: 20px;
+}
+
+/* Cada tarjeta dentro del Archive */
+.archive-item {
+  break-inside: avoid; /* Evita que las fotos se corten entre columnas */
+  margin-bottom: 24px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Contenedor de la Imagen */
+.archive-media {
+  position: relative;
+  overflow: hidden;
+  background-color: #111; /* Fondo para prevenir parpadeos */
+  border-radius: 4px; /* Bordes sutiles high-end */
+}
+
+/* Imagen base: Blanco y Negro + Transición suave */
+.archive-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* HOVER EFFECT: Revela el color y micro zoom */
+.archive-item:hover .archive-media img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+/* Overlay flotante (Tags al hacer hover) */
+.archive-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.archive-item:hover .archive-overlay {
+  opacity: 1;
+}
+
+.archive-tag, .archive-date {
+  font-family: 'Space Mono', monospace, sans-serif; /* Tipografía técnica */
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Leyenda inferior sutil fuera de la foto */
+.archive-caption {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================== */
+
+/* Tablet: 2 columnas */
+@media (max-width: 900px) {
+  .archive-grid {
+    column-count: 2;
+    column-gap: 16px;
+  }
+}
+
+/* Mobile: 1 columna estilo feed vertical */
+@media (max-width: 600px) {
+  .archive-grid {
+    column-count: 1;
+  }
+  
+  /* En mobile, mantenemos las fotos a color por defecto para mejor UX táctil */
+  .archive-media img {
+    filter: grayscale(0%);
+  }
+  
+  .archive-overlay {
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%);
+  }
+}
+
 /* ==========================================================================
    8. RESPONSIVE / MÓVILES
    ========================================================================== */
