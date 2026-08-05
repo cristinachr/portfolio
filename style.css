@@ -1,6 +1,5 @@
 /* ==========================================================================
-   PORTAFOLIO CRISTINA CHAMORRO — CSS OFICIAL
-   Estilo: Editorial / Minimalista / Readymag-inspired
+   PORTAFOLIO CRISTINA CHAMORRO — CSS UNIFICADO (Home, About & Proyectos)
    ========================================================================== */
 
 /* --- RESET & VARIABLES GLOBALES --- */
@@ -18,7 +17,7 @@
     --border-color: #e5e5e5;
     --tag-bg: #eeeeee;
     --img-placeholder: #eef0f2;
-    --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 body {
@@ -26,39 +25,66 @@ body {
     background-color: var(--bg-color);
     color: var(--text-primary);
     line-height: 1.6;
-    padding: 2rem 1.5rem;
-    max-width: 1200px;
+    padding: 3rem 2rem;
+    max-width: 1100px;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
 }
 
-/* --- NAVEGACIÓN --- */
+/* --- ENLACES Y NAVEGACIÓN --- */
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
 .back-link {
     display: inline-block;
     font-size: 0.85rem;
-    text-decoration: none;
     color: var(--text-secondary);
     margin-bottom: 3rem;
-    transition: color 0.2s ease;
 }
 
-.back-link:hover {
+nav {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    color: var(--text-secondary);
+}
+
+nav a:hover {
     color: var(--text-primary);
 }
 
-/* --- ENCABEZADOS Y METADATA --- */
+/* --- ENCABEZADOS GENERALES --- */
 header {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.brand-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.25rem;
 }
 
 h1 {
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 500;
     letter-spacing: -0.03em;
+    line-height: 1.15;
     margin-bottom: 0.5rem;
-    line-height: 1.1;
 }
 
 .subtitle {
@@ -68,11 +94,13 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* --- METADATA DE PROYECTOS --- */
 .project-meta {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
     font-size: 0.85rem;
+    margin-top: 2rem;
 }
 
 .meta-item span {
@@ -85,4 +113,136 @@ h1 {
 }
 
 .tags {
-    display:
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+/* --- LAYOUTS (GRID & FLEXBOX ROBUSTO) --- */
+/* Estructura para páginas de Proyecto e Indice de la Home */
+.project-layout, .grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .project-layout, .grid-layout {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    aside {
+        width: 25%;
+        flex-shrink: 0;
+    }
+
+    .main-content {
+        width: 75%;
+        flex-grow: 1;
+    }
+}
+
+.section-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    position: sticky;
+    top: 2rem;
+}
+
+/* --- TIPOGRAFÍA Y BLOQUES DE TEXTO --- */
+.text-block {
+    margin-bottom: 3.5rem;
+}
+
+.text-block h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.text-block p {
+    color: #333333;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Listas con guion editorial */
+ul.highlights-list, ul.clean-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+ul.highlights-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #333333;
+    font-weight: 300;
+}
+
+ul.highlights-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+}
+
+ul.clean-list li {
+    margin-bottom: 0.4rem;
+    color: #333333;
+    font-weight: 300;
+}
+
+/* --- GALERÍA DE IMÁGENES (PROYECTOS) --- */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    background-color: var(--img-placeholder);
+    min-height: 250px; /* Evita colapsos mientras carga la imagen */
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+    font-weight: 300;
+}
+
+/* --- FOOTER --- */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
