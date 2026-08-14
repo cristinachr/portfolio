@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinzas de Precisión In-House — Live Roots — Cristina Chamorro</title>
+    <title>Sistemas de Micro-Sujeción & Interfaz Bioeléctrica — Live Roots — Cristina Chamorro</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body id="project-single-page">
@@ -22,71 +22,119 @@
         
         <header class="project-header">
             <div class="project-meta-top">
-                <span class="section-label">02 / R&D & Product Development</span>
-                <span class="project-year">2025</span>
+                <span class="section-label">02 / HARDWARE R&D & PRODUCT DEVELOPMENT</span>
+                <span class="project-year">2025 – 2026</span>
             </div>
             
-            <h1 class="project-title">Pinzas de Precisión In-House para Captación Bioeléctrica</h1>
+            <h1 class="project-title">Custom Gripper Systems & Plant-Machine Interface</h1>
             
             <div class="project-spec-grid">
                 <div class="spec-item">
                     <span class="spec-label">Encargo</span>
-                    <p>Consultoría de Diseño (Live Roots)</p>
+                    <p>Consultoría R&D / Desarrollo de Hardware (Live Roots)</p>
                 </div>
                 <div class="spec-item">
                     <span class="spec-label">Alcance</span>
-                    <p>Etapa Inicial de Factibilidad & DFM</p>
+                    <p>Matriz de Requerimientos, DFM, Prototipado SLA/FDM & Paquete CAD</p>
                 </div>
                 <div class="spec-item">
                     <span class="spec-label">Enfoque</span>
-                    <p>Ergonomía de Micro-Agarre & Fabricación Digital</p>
+                    <p>Micro-Agarre No Invasivo, Cuidado Tisular & Strain Relief</p>
                 </div>
                 <div class="spec-item">
                     <span class="spec-label">Herramientas</span>
-                    <p>Rhinoceros, CAD/CAM, Prototipado 3D</p>
+                    <p>Autodesk Fusion 360 (CAD/DFM/Render), Impresión 3D (FDM/SLA)</p>
                 </div>
             </div>
         </header>
 
-        <!-- HERO MEDIA: Render técnico o vista en despiece del modelo 3D -->
         <div class="project-hero-media">
-            <img src="../img/pinzas/render-despiece.webp" alt="Despiece técnico CAD de la pinza">
-            <figcaption class="media-caption">Modelo tridimensional explosivo para análisis de ensamble in-house e integración del electrodo.</figcaption>
+            <img src="../img/pinzas/hero-pinzas.jpg" alt="Render 4K del ensamble final de la pinza Live Roots en Fusion 360">
+            <figcaption class="media-caption">Propuesta de hardware final: Sistema de micro-sujeción con ajuste micrométrico para captación bioeléctrica no invasiva.</figcaption>
         </div>
 
         <section class="project-narrative">
             <div class="narrative-col text-main">
-                <h2>El Desafío Técnico</h2>
+                <h2>El Desafío Técnico & Interfaz Biológica</h2>
                 <p>
-                    Live Roots requería el desarrollo de una línea de pinzas/electrodos propios para la medición bioeléctrica en tejidos vegetales. El reto consistía en proyectar una herramienta de micro-agarre capaz de sujetar tallos u hojas frágiles sin dañarlos, garantizando conductividad continua y permitiendo una producción in-house mediante impresión 3D / CNC.
+                    Live Roots desarrolla dispositivos que traducen la actividad bioeléctrica vegetal en sonido en tiempo real. Lo que comenzó como un requerimiento acotado para fabricar pinzas comerciales in-house, evolucionó hacia una reingeniería sistémica impulsada por las complejas variables de usabilidad y cuidado biológico:
                 </p>
+                <ul>
+                    <li><strong>Variabilidad Botánica & Sensibilidad:</strong> Variación morfológica crítica (desde pétalos y hongos vulnerables al rasgado, hasta hojas gruesas tipo <em>Monstera</em> o cactus). Las pinzas metálicas comerciales oxidaban y rompían el tejido vegetal.</li>
+                    <li><strong>Tensión Mecánica por Cables:</strong> El peso colgado del cable forzaba o quebraba las hojas. En eventos públicos, el tironeo accidental exigía incorporar soluciones de alivio de tensión (<em>strain relief</em>).</li>
+                    <li><strong>Conductividad & Humedad:</strong> La interacción con geles conductores y agua oxidaba los electrodos estándar, alterando la lectura bioeléctrica.</li>
+                </ul>
             </div>
+            
             <div class="narrative-col text-secondary">
-                <h2>Aporte & DFM (Design for Manufacturing)</h2>
+                <h2>Ingeniería DFM en Fusion 360</h2>
                 <p>
-                    Se trabajó en la definición de tolerancias, la ergonomía del muelle de presión y la simplificación de partes para reducir tiempos de impresión y armado. Aunque el proyecto se detuvo en su fase conceptual por ajuste estratégico del cliente, la consultoría sentó la base técnica para la ruta de manufactura de la marca.
+                    Se formalizó una <strong>Matriz de Atributos</strong> (prácticos, sensoriales, indicativos y simbólicos) que guió el modelado parametrizado en Autodesk Fusion 360.
+                </p>
+                <p>
+                    <strong>Criterio de Manufactura (DFM):</strong> Se diseñó la partición de piezas y el ruteo interno de los cables directamente en la geometría 3D, ajustando tolerancias dinámicas de ensamble (0.25 mm) y aplicando biseles de alivio (0.5 mm fillets). Se evaluó resina (SLA) para alta resolución en superficies de contacto y se adaptaron los modelos finales a PLA (FDM) para garantizar un flujo de réplica in-house rápido, limpio y económico.
                 </p>
             </div>
         </section>
 
-        <!-- GALERÍA DE PROCESO TÉCNICO -->
+        <section class="project-testing-section">
+            <div class="video-test-wrapper">
+                <video autoplay loop muted playsinline class="project-video">
+                    <source src="../img/pinzas/20250331_171130.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+                <figcaption class="media-caption">Prueba de concepto en banco de pruebas: Validación de conductividad bioeléctrica sobre espécimen vivo (Pothos) conectado al módulo Live Roots.</figcaption>
+            </div>
+        </section>
+
         <section class="project-gallery">
             
             <figure class="gallery-item">
-                <img src="../img/pinzas/plano-dimensiones.webp" alt="Plano técnico con cotas">
-                <figcaption>Estudio de proporciones, cotas y ángulos de apertura para optimizar la ergonomía de la mano.</figcaption>
+                <img src="../img/pinzas/despiece-explosionado.webp" alt="Render de despiece técnico explosionado en Fusion 360">
+                <figcaption>Render de despiece explosionado: Análisis de componentes internos, cavidad del electrodo y mecanismo de articulación.</figcaption>
             </figure>
 
             <figure class="gallery-item">
-                <img src="../img/pinzas/board-bocetos.webp" alt="Board de exploración conceptual">
-                <figcaption>Exploración morfológica e integración de mecanismos de sujeción para cables MIDI/señal.</figcaption>
+                <img src="../img/pinzas/fusion-particion.webp" alt="Captura de modelado 3D y análisis DFM en Fusion 360">
+                <figcaption>Modelado sólido parametrizado en Fusion 360: Partición de geometrías y tolerancias para manufactura aditiva.</figcaption>
             </figure>
 
             <figure class="gallery-item item-wide">
-                <img src="../img/pinzas/render-estudio.webp" alt="Vista del modelo 3D">
-                <figcaption>Estudio de superficie y análisis de partición de moldes para fabricación digital.</figcaption>
+                <img src="../img/pinzas/matriz-requerimientos.webp" alt="Lámina de Matriz de Requerimientos y Atributos">
+                <figcaption>Matriz de Requerimientos y Atributos de Diseño: Documentación metodológica de los parámetros prácticos, biológicos y sensoriales.</figcaption>
             </figure>
 
+            <figure class="gallery-item">
+                <img src="../img/pinzas/Sin_título_2026-Aug-12_12-23-38AM-000_CustomizedView21321605804.jpg" alt="Detalle del cabezal de la pinza">
+                <figcaption>Detalle del cabezal de sujeción: Biseles de 0.5mm para evitar concentración de tensiones y evitar el corte de tejido suave.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="../img/pinzas/Sin_ttulo_2026-Aug-12_02-05-33AM-000_CustomizedView2632924264.jpg" alt="Vista lateral de la pinza y mecanismo">
+                <figcaption>Exploración de alternativas de sujeción con regulador micrométrico para evitar el aprisionamiento descontrolado.</figcaption>
+            </figure>
+
+            <figure class="project-media-wrapper">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline preload="auto" class="styled-video">
+                    <source src="../img/pinzas/animacion-mecanismo.webm" type="video/mp4">
+                     Tu navegador no soporta el formato de video HTML5.
+                     </video>
+                    </div>
+                <figcaption class="media-caption">
+                Prueba de concepto en banco de pruebas: Validación de conductividad bioeléctrica sobre espécimen vivo (Pothos) en conexión con el módulo Live Roots.
+                </figcaption>
+             </figure>
+
+        </section>
+
+        <section class="project-closing">
+            <div class="closing-content">
+                <h2>Cierre de Consultoría</h2>
+                <p>
+                    La consultoría entregó a Live Roots un paquete completo de desarrollo: matriz metodológica de diseño, modelos CAD parametrizados en Fusion 360 con especificaciones DFM para manufactura aditiva in-house y la validación en banco de pruebas funcional. El caso demuestra cómo un requerimiento puntual de fabricación se convierte en un proyecto integral de Hardware e Interfaz Biodigital.
+                </p>
+            </div>
         </section>
 
         <footer class="project-footer-nav">
